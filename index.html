@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h1>For You ❤️</h1>
+  <p class="subtitle">I made this just for you</p>
+
+  <div class="buttons">
+    <button onclick="showSection('letters')">💌 Open When</button>
+    <button onclick="showSection('reasons')">💖 Why I Love You</button>
+    <button onclick="showSection('game')">🎮 Mini Game</button>
+  </div>
+
+  <!-- OPEN WHEN -->
+  <div id="letters" class="section hidden">
+    <h2>Open When 💌</h2>
+    <button onclick="showLetter('sad')">Open when you’re sad</button>
+    <button onclick="showLetter('miss')">Open when you miss me</button>
+
+    <div id="letterDisplay" class="letter-box hidden"></div>
+  </div>
+
+  <!-- REASONS -->
+  <div id="reasons" class="section hidden">
+    <h2>Why I Love You 💖</h2>
+    <button class="heart-btn" onclick="generateReason()">❤️</button>
+    <p id="reasonText"></p>
+  </div>
+
+  <!-- GAME -->
+  <div id="game" class="section hidden">
+    <h2>Catch the Heart 🎮</h2>
+
+    <p>Time Left: <span id="time">30</span>s</p>
+    <p>Score: <span id="score">0</span></p>
+
+    <button onclick="startGame()">Start Game</button>
+
+    <div id="gameBox">
+      <div id="heart">❤️</div>
+    </div>
+
+    <p id="gameMessage" class="hidden">
+      💌 You did it. I hid this here because love is earned —
+      and I’d choose you every single time.
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

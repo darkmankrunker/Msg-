@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #ff0000, #3362fa);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+.subtitle {
+  margin-bottom: 25px;
+}
+
+.buttons button,
+.section button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background: #ff5e78;
+  color: white;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.heart-btn {
+  font-size: 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#reasonText {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+/* OPEN WHEN LETTER BOX */
+.letter-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 10px;
+  font-size: 1.1em;
+  color: #b3003c;
+}
+
+/* GAME STYLES */
+#gameBox {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  border: 2px dashed #ff5e78;
+  border-radius: 10px;
+}
+
+#heart {
+  position: absolute;
+  font-size: 2.5em;
+  cursor: pointer;
+  user-select: none;
+}
+
+#gameMessage {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #b3003c;
+  font-weight: bold;
+}
+
